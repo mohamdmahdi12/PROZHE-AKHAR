@@ -38,7 +38,7 @@ for i in range(len(product_list)):
 
 
 
-if choice == 1:
+elif choice == 1:
   id=input("cod ganse ra bego :")
 name=input("asme gans ra bego :")
 price=input("ghaymat gans ra bego:")
@@ -49,7 +49,7 @@ myfile.cloes()
 print("gans azafe shod")
 
 
-if choice == 2:
+elif choice == 2:
    print(PRODUCT)
 for x in range(len(PRODUCT)):
     print(PRODUCT[x][name])
@@ -76,7 +76,7 @@ for i in range(len(PRODUCT)-1):
               print("product editend!")
               
 
-if choice == 3:
+elif choice == 3:
     for x in range(len(PRODUCT)):
         print(PRODUCT[x]["name"])
         name  = input("che gansi ra mikhahy taghir dahid")
