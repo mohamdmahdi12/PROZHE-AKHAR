@@ -36,8 +36,7 @@ for i in range(len(product_list)):
     PRODUCT.append(mydict)
 
 
-
-
+#Add
 elif choice == 1:
   id=input("cod ganse ra bego :")
 name=input("asme gans ra bego :")
@@ -48,7 +47,7 @@ myfile.write("/n" + id +name + price + count)
 myfile.cloes()
 print("gans azafe shod")
 
-
+#Edit
 elif choice == 2:
    print(PRODUCT)
 for x in range(len(PRODUCT)):
@@ -75,7 +74,7 @@ for i in range(len(PRODUCT)-1):
               myfile.close()
               print("product editend!")
               
-
+#Delete
 elif choice == 3:
     for x in range(len(PRODUCT)):
         print(PRODUCT[x]["name"])
@@ -92,7 +91,7 @@ elif choice == 3:
                     print("delet shod")
 
                     
-                   
+#search             
 elif choice == 4:
     name=input("name ra vared conid:")
     for i in range(len(PRODUCT)):
@@ -105,14 +104,14 @@ elif choice == 4:
         else:#by mahdi
             print("gans paida nemy shavad!")
             
-            
+#List  
 elif choice == 5:
     print("list of producte in{id/name}order:")
     print("id/name/price/count")
     for i in range(len(PRODUCT)):
         print(PRODUCT[i]["id"],"/",PRODUCT[i]["price"],"/",PRODUCT[i]["count"])
 
-
+#buy
 elif choice == 6:
     print("list of product in {id/name}oder :")
     #by mahdi
@@ -128,7 +127,7 @@ elif choice == 6:
                 PRODUCT[i]["count"]=str(count)
                 print("angame shod")
 
-
+#exit
 elif choice ==7:
     rotation = False
     print("khareg shodin")
